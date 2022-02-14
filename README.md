@@ -80,4 +80,9 @@ Summary:
 - Recall Score (Average) - 0.94
 
 ## Summary
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+
+In this analysis, we successfully created different machine learning models to assess and predict credit risk based on credit card credit data from LendingClub, a peer-to-peer lending services company. While using imbalanced-learn and scikit-learn libraries to build and evaluate models using resampling, we can further evaluate the performance of these models and help determine which is the best to use by paying attention to these models' accuracy, prediction, recall, and f1 scores. 
+
+All models had an average of 0.99 between high and low credit risk. The accuracy scores ranged from 0.52 to 0.93 with the SMOTEENN model being the lowest and the Easy Ensemble AdaBoost Classifier being the highest. Although SMOTEENN had the lowest accuracy score, it did have a significantly higher recall score than all other models besides the Easy Ensemble AdaBoost Classifier. 
+
+As we don't want to solely rely on the accuracy score to help determine which model would be best at predicting credit risk, the  precision, recall and f1 scores of our models are important determinants as well. Given this, the Easy Ensemble Adaboost Classifier had the best scores above all other models. We can confidently recommend this model to be the best at assessing credit risk.
